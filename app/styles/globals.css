@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1a1a1a;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+
+}
+
+.welcome-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.welcome-subtitle {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin-bottom: 24px;
+}
+
+input[type="email"], 
+input[type="password"] ,
+input[type="text"]
+{
+    width: calc(100% - 30px);
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #1a1a1a;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+input.valid {
+    border-color: #10b981;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 58%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.toggle-password:hover {
+    color: #4b5563;
+}
+
+.check-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #10b981;
+    font-size: 18px;
+}
+
+.error-msg {
+    color: #ef4444;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #3b82f6;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 4px;
+}
+.login-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.alternative-login {
+    margin-top: 2px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 0;
+}
+
+.line {
+    border: 0;
+    height: 1px;
+    background-color: #e5e7eb;
+    flex-grow: 1;
+}
+
+.or-text {
+    font-size: 14px;
+    color: #9ca3af;
+    padding: 0 10px;
+}
+
+.google-login, 
+.apple-login {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.google-login {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.google-login img, .apple-login img {
+    margin-right: 10px;
+    height: 18px;
+}
+
+.apple-login {
+    /* background-color: #000000; */
+    background-color: #ffffff;
+}
+
+.google-login:hover {
+    background-color: #f1f3f5;
+}
+
+
+
+.signup-text {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-text a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+.step-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d1d5db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.step.active {
+    background-color: #2563eb;
+    color: white;
+}
